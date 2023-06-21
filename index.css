@@ -1,0 +1,75 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+.boxes-app-container {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 30px;
+}
+.small-box {
+  background-color: #fbbf24;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.medium-box {
+  background-color: #38bdf8;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.large-box {
+  background-color: #ec4899;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 17px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.box-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .boxes-app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+}
